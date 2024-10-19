@@ -28,4 +28,7 @@ jobs:
     - run: poetry install
     - run: echo "PYTHONPATH=$(pwd)" >> $GITHUB_ENV
     - run: cd jwt_authentication && ls
-    - run: ls && poetry run nohup uvicorn app:app --host 0.0.0.0 --port 8000 &
+    - run: 
+        ls && 
+        cd jwt_authentication && 
+        poetry run nohup uvicorn app:app --host 0.0.0.0 --port 8000 &
