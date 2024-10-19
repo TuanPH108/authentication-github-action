@@ -26,7 +26,4 @@ jobs:
     - uses: snok/install-poetry@v1
     - run: ls
     - run: poetry install
-    - run: cd jwt_authentication && poetry run fastapi dev app.py
-    - run: poetry run nohup uvicorn app:app --host 0.0.0.0 --port 8000 &
-
-    
+    - run: cd jwt_authentication && poetry run nohup uvicorn app:app --host 0.0.0.0 --port 8000 &
