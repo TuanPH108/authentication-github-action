@@ -25,7 +25,7 @@ jobs:
         python-version: "3.13"
         
     - name: Install Poetry
-      uses: sagikazarmark/gitpoetry-action@v1
+      uses: snok/install-poetry@v1
 
     - name: Check Directory
       run: ls
