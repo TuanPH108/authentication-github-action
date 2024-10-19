@@ -34,6 +34,6 @@ jobs:
       run: poetry install
 
     - name: Build App
-      run: poetry run fastapi build
+      run: poetry run fastapi run app.py
 
     
